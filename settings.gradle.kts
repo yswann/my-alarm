@@ -17,6 +17,12 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     }
+
+    versionCatalogs {
+        create("extlibs") {
+            from(files("extlibs/gradle/libs.versions.toml"))
+        }
+    }
 }
 
 rootProject.name = "My Alarm"
