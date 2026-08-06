@@ -1,10 +1,10 @@
 pluginManagement {
     repositories {
         google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
+            mavenContent {
+                includeGroupAndSubgroups("androidx")
+                includeGroupAndSubgroups("com.android")
+                includeGroupAndSubgroups("com.google")
             }
         }
         mavenCentral()
@@ -21,9 +21,6 @@ dependencyResolutionManagement {
     versionCatalogs {
         create("extlibs") {
             from(files("extlibs/gradle/libs.versions.toml"))
-        }
-        create("libs") {
-            from(files("libs/gradle/libs.versions.toml"))
         }
     }
 }
