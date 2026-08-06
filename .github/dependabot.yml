@@ -1,5 +1,10 @@
 version: 2
 
+registries:
+  google-maven:
+    type: maven-repository
+    url: https://dl.google.com/dl/android/maven2/
+
 updates:
   - package-ecosystem: "gradle"
     directories:
@@ -11,3 +16,5 @@ updates:
       - "/"
     schedule:
       interval: "daily"
+    registries:
+      - google-maven
