@@ -6,10 +6,10 @@ updates:
       - "/extlibs"
       - "/extlibs/.."
     schedule:
-      interval: "weekly"
+      interval: "daily"
   - package-ecosystem: "gradle"
     directories:
       - "/"
       - "/libs"
     schedule:
-      interval: "weekly"
+      interval: "daily"
