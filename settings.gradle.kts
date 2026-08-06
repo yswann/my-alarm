@@ -22,6 +22,9 @@ dependencyResolutionManagement {
         create("extlibs") {
             from(files("extlibs/gradle/libs.versions.toml"))
         }
+        create("libs") {
+            from(files("libs/gradle/libs.versions.toml"))
+        }
     }
 }
 
